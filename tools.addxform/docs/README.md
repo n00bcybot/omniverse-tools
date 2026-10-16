@@ -1,3 +1,3 @@
 # Add Xform [tools.addxform]
 
-A simple python UI extension example. Use it as a starting point for your extensions.
+A simple python UI extension for adding Xform as a parent to a mesh.
