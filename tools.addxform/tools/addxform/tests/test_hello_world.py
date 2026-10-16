@@ -41,14 +41,14 @@ class Test(omni.kit.test.AsyncTestCase):
 
     async def test_window_button(self):
         # Find a label in our window
-        label = ui_test.find("Add Xform To Mesh//Frame/**/Label[*]")
+        label = ui_test.find("Add Xform//Frame/**/Label[*]")
 
         # Find buttons in our window
         add_button = ui_test.find(
-            "Add Xform To Mesh//Frame/**/Button[*].text=='Add'"
+            "Add Xform//Frame/**/Button[*].text=='Add'"
         )
         reset_button = ui_test.find(
-            "Add Xform To Mesh//Frame/**/Button[*].text=='Reset'"
+            "Add Xform//Frame/**/Button[*].text=='Reset'"
         )
 
         # Click reset button

@@ -9,7 +9,7 @@
 # its affiliates is strictly prohibited.
 
 [package]
-title = "Add Xform To Mesh"
+title = "Add Xform"
 version = "0.1.0"  # Semantic Versioning is used: https://semver.org/
 description = "The simplest python UI extension example. Use it as a starting point for your extensions."
 category = "Example"  # How to categorize this in the Extension Manager
@@ -26,6 +26,16 @@ repository = "https://github.com/NVIDIA-Omniverse/kit-app-template"  # URL of th
 
 
 [settings]
+
+[settings]
+# Ensure standard terminal output is allowed
+"/log/enableStandardStreamOutput" = true
+
+# Lower the threshold so "info" or "verbose" messages print to the console
+"/log/outputStreamLevel" = "info" 
+
+# Optional: Add extra debugging details (timestamps, file names, line numbers)
+"/log/detail" = true 
 
 
 [[python.module]]  # Main python module this extension provides, it will be publicly available as "import tools.addxform"
